@@ -50,6 +50,7 @@ class RssFeed {
               .map((element) => int.tryParse(element.innerText) ?? 0)
               .toList() ??
           <int>[],
+      pubDate: findElementOrNull(channelElement, 'pubDate')?.innerText,
       lastBuildDate:
           findElementOrNull(channelElement, 'lastBuildDate')?.innerText,
       language: findElementOrNull(channelElement, 'language')?.innerText,
