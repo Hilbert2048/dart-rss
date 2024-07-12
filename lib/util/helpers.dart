@@ -42,6 +42,7 @@ extension SafeParseDateTime on DateTime {
 
     const dateFormatPatterns = [
       'EEE, d MMM yyyy HH:mm:ss Z',
+      'yyyy-MM-dd HH:mm:ss Z',
     ];
 
     // DateTime.parse returns null if the input has
